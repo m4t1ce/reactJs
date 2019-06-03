@@ -4,13 +4,13 @@ class Counter extends React.Component{
     constructor(props){
         super()
         this.state={
-            age:props.initialNumber
+            age:0
         }
     }
 
     add(){
         this.setState({
-            age:parseInt(this.state.age)+2
+            age:this.state.age+1
         });
     }
 

@@ -7,7 +7,7 @@ class Right extends React.Component{
     }
 render(){
     return(
-        <Counter initialNumber="4"/>
+        <Counter />
     )
 }
 }
