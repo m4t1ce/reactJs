@@ -1,13 +1,16 @@
 import React from 'react'
 import Counter from './Counter'
-
+import List from './List'
 class Right extends React.Component{
     constructor(){
         super()
     }
 render(){
     return(
-        <Counter />
+        <div>
+            <Counter />
+            <List />
+        </div>
     )
 }
 }

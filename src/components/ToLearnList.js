@@ -1,6 +1,5 @@
 import React from 'react'
 import toLearns from '../tables/toLearns';
-import ToLearnItem from './ToLearnItem'
 
 function ToLearnList(){
     const toLearnsComponent=toLearns.map(item=> <ToLearnItem text={item.text} key={item.id} status={item.status}/>)
@@ -18,4 +17,13 @@ return(
 )
 }
 
+function ToLearnItem(props){
+    return(
+        <div>
+            <p key={props.id} className={props.status}>{props.text}</p>
+        </div>
+           )}
+
 export default ToLearnList
+
+
